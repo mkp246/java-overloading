@@ -14,4 +14,9 @@ public class ProfilerTester {
         Profiler profiler = new Profiler();
         return profiler.profile("node 1", NetworkProtocolType.CISCOACI);
     }
+
+    public String profileMeraki() {
+        Profiler profiler = new Profiler();
+        return profiler.profile("node 1", "MERAKI");
+    }
 }

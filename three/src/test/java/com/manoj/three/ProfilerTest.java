@@ -19,4 +19,11 @@ public class ProfilerTest {
         String message = tester.profileACI();
         assertEquals("profile node node 1 for type CISCOACI", message);
     }
+
+    @Test
+    public void testProfileMeraki() {
+        ProfilerTester tester = new ProfilerTester();
+        String message = tester.profileMeraki();
+        assertEquals("profile node node 1 for type MERAKI", message);
+    }
 }
