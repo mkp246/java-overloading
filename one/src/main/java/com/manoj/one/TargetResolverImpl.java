@@ -4,7 +4,8 @@ import java.util.Collections;
 import java.util.List;
 
 public class TargetResolverImpl implements TargetResolver {
-    public List<String> resolve(NetworkProtocolType type) {
-        return Collections.singletonList(type.name());
+    @Override
+    public List<String> resolve(String type) {
+        return Collections.singletonList(type);
     }
 }

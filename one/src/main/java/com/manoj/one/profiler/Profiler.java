@@ -14,6 +14,11 @@ public class Profiler {
     }
 
     public String profile(String nodeName, NetworkProtocolType type) {
+        List<String> types = resolver.resolve(type.name());
+        return "profile node " + nodeName + " for type " + types.get(0);
+    }
+
+    public String profile(String nodeName, String type) {
         List<String> types = resolver.resolve(type);
         return "profile node " + nodeName + " for type " + types.get(0);
     }
